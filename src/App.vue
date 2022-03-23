@@ -1,26 +1,55 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<div id = "app">
+		<dataItem/>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import dataItem from "./components/dataItem.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    dataItem
   }
-}
+};
 </script>
 
+
 <style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #f6b93b;
+}
+
+ul {
+  margin: 0;
+}
+table
+{
+  margin: 0.5rem;
+  text-align: center;
+}
+
 #app {
+  height: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: begin;
 }
 </style>
